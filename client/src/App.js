@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.png';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
+import Launches from './components/Launches';
 import './App.css';
 
 const client = new ApolloClient({
@@ -19,6 +20,7 @@ class App extends Component {
             className="spacex_logo" 
             style={{ width: 300 }} 
           />
+          <Launches />
         </div>
       </ApolloProvider>
     );
